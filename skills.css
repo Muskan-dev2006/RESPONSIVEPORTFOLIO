@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+body {
+    background-image:linear-gradient(to right,white,pink);
+    color: #333;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    width: 60px;
+    z-index: 1;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight:bold;
+    color: #333;
+    margin-left:-1rem;
+    z-index: 1;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover{
+    transition: all 0.8s;
+    color: margin;
+    font-weight: bold;
+}
+
+.page-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #333;
+}
+
+.skills-section {
+    padding: 2rem 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skills-category {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.skills-list .skill {
+    margin-bottom: 1rem;
+}
+
+.skill h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
